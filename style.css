@@ -1,0 +1,502 @@
+/* --------------- Reset  ------------------- */
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{
+    margin: 0;
+    padding: 0; 
+    border: 0; 
+    outline: none;
+}
+ 
+li, ul, ol
+{
+    list-style: none;
+}
+ 
+/* --------------- End Reset  ------------------- */
+
+/* --------------- Globals ---------------------- */
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /*overflow: hidden; */ /*disable this ones scrolling works */
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    min-width: 1140px;
+}
+
+a{
+    color: ghostwhite;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;    
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+    padding: 50px 0 10px 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+h3{
+    text-align: center;
+    font-size: 25px;
+    color: #f83600;
+}
+
+.section{
+    min-width: 1024px;
+}
+
+/* ----------------- Nav -------------------- */
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #fe8c00;
+    background-image: linear-gradient(to bottom right, #fe8c00, #f83600);
+    text-align: center;
+    z-index: 10;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#toggle{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    top: 20px;
+    left: 20px;
+    z-index: 11;
+}
+
+#toggle:hover{
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 8px;
+    left: 0;
+    background: black;
+    -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+    transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+}
+
+.bar1{
+    top: 0;
+}
+
+.bar2{
+    top: 14px;
+}
+
+.bar3{
+    top: 28px;
+}
+
+#toggle.active .bar1{
+    top: 14px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+    transition: all 0.5s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+}
+
+#toggle.active .bar2{
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+    transition: all 0.5s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+}
+
+#toggle.active .bar3{
+    opacity: 0;
+    -webkit-transition: opacity 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+    transition: opacity 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+}
+
+nav ul li{
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;    
+    transition: all 0.5s ease-in-out;
+}
+
+.social{
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.social i{
+    padding: 5%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;    
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li:hover, .social i:hover{
+
+    transform: translate(0, -5px);
+    box-shadow: 0px 5px 0px 0px;
+}
+
+/* ----------------- Body Container -------------------- */
+
+.section1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    background-image: url(img/bg.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px #f83600;
+}
+
+.name{
+    font-size: 32px;
+    color: white;
+    text-shadow: 1px 1px black;    
+}
+
+.section1 p{
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px black;   
+}
+
+.downArrow a{
+    position: relative;
+    bottom: 0px;
+    font-size: 50px;
+    cursor: pointer;
+    color: #f83600;
+    text-align: center;
+}
+
+.downArrow a:hover{
+    animation-duration: 0.7s;
+    animation-name: point;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* ----------------- About Section ---------------------- */
+
+.about{
+    box-sizing: border-box;
+    padding: 0 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f83600;
+    background-image: linear-gradient(to bottom right, #fe8c00, #f83600);
+}
+
+.introduction{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-top: 20px;
+    background: white;
+    padding: 30px;
+    margin: 30px 0 30px 0;
+    box-shadow: 3px 10px 10px 4px rgba(0,0,0,0.1)
+}
+
+.introduction p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+    padding: 0 20px 0 0;
+}
+
+.introduction b{
+    text-transform: uppercase;
+    color: #fe8c00;
+}
+
+.knowledge, .portfolioWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 100px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.skillBox{
+    background: white;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 10px 10px 4px rgba(0,0,0,0.1)
+}
+
+.skillBox i{
+    font-size: 62px;
+    color: #fe8c00; 
+}
+
+.skillBox h3{
+    color: #222222;
+    padding: 20px;
+}
+
+.skillBox ul li{
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+
+/* ----------------- Portfolio Section ---------------------- */
+
+.portfolio{
+    background-image: url(img/mountains.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolioBox{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    border: 0;
+    height: 300px;
+    border: 2px solid white;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: opacity(50%);
+    -ms-filter: opacity(50%);
+    -o-filter: opacity(50%);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;    
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolioBox:hover{
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+}
+
+.portfolioBox:hover a{
+    display: block;
+    -webkit-filter: opacity(150%);
+    -moz-filter: opacity(150%);
+    -ms-filter: opacity(150%);
+    -o-filter: opacity(150%);
+}
+
+.portfolioBox a{
+    color: color;
+    background-color: dimgrey;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    -webkit-filter: opacity(0%);
+    -moz-filter: opacity(0%);
+    -ms-filter: opacity(0%);
+    -o-filter: opacity(0%);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;    
+    transition: all 0.5s ease-in-out;
+}
+
+.item1{
+    background-image: url(img/7Minutes.PNG);
+    width: 60%;
+}
+
+.item2{
+    background-image: url(img/dms.PNG);
+    width: 40%;
+}
+
+.item3{
+    background-image: url(img/calc.jpg);
+    width: 25%;
+    height: 400px;
+}
+
+.item4{
+    background-image: url(img/learningObject.png);
+    width: 75%;
+    height: 400px;
+}
+
+.item5{
+    background-image: url(img/contact.jpg);
+    width: 40%;
+    height: 300px;
+}
+
+.item6{
+    background-image: url(img/Logo_web.png);
+    background-color: white;
+    width: 20%;
+    height: 300px;
+}
+
+.item7{
+    background-image: url(img/game3.PNG);
+    width: 40%;
+    height: 300px;
+}
+
+.portfolioTitle{
+    font-size: 62px;
+    font-weight: 600;
+    padding: 50px 0 0 0 ;
+}
+
+.content{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imgArea, .textArea{
+    margin-top: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.textArea{
+    margin: 50px 150px 0 150px;
+    padding: 20px;
+    background: white;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.textArea p{
+    padding: 0 10px;
+}
+
+.textArea h4{
+    margin-bottom: 50px;
+    font-size: 62px;
+    color: #fe8c00;
+    border-bottom: 5px solid black;
+}
+
+.imgArea{
+    margin: 50px auto;
+}
+
+.devIcons{
+    font-size: 42px;
+    display: flex;
+    padding: 50px 10px;
+}
+
+.devIcons i{
+    padding: 0 20px 0 20px;
+}
+
+.unity{
+    width: 20%;
+    padding: 30px;
+}
+
+
+/*  footer   */
+
+footer{
+    background: #222222;
+    padding: 50px;
+}
+
+footer h4{
+    color: #fe8c00;
+    font-size: 34px;
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.footerRow{
+    display: flex;
+}
+
+.col{
+    margin: 0 50px 0 50px;
+}
+
+.column{
+    display: inline-block;
+    vertical-align: top;
+    padding: 30px 30px 30px 0;
+}
+
+.column a{
+    padding: 30px 30px 30px 0;
+    font-size: 20px;
+}
