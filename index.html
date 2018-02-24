@@ -1,136 +1,265 @@
 <!DOCTYPE HTML>
 <html lang="en">
+    
     <head>
         <meta charset="utf-8">
-        <title>Clay Beauchamp Portfolio</title>
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> <!-- Google Fonmts -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Clay Beauchamp | Portfolio</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Font Awesome -->
-        <link rel="stylesheet" type="text/css" href="style.css"> <!-- stylesheet -->
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     
     <body>        
         
-        <!-- -------------------- Nav Bar ------------------------- -->
-        <div id="toggle">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-        </div>
-
-        <aside id="sideMenu">
-            <nav>
-                <ul class="menu">
-                    <li class="homeNav"><a href="index.html">Home</a></li>
-                    <li class="menu-item aboutNav"><a href="#section2">About Me</a></li>
-                    <li class="menu-item folioNav"><a href="#section3">My Work</a></li>
-                    <li class="menu-item contactNav"><a a href="#contact">Contact Me</a></li>
-                </ul>
-                <div class="social">
-                    <a href="https://www.facebook.com/clay.beauchamp.98" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/clay-beauchamp-2b40a7149/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                </div>
-            </nav>
-        </aside>
-    
-        <!-- -------------------- Home Page ------------------------- -->
-
-        <div id="section1" class='section1 section'>
-            <img src="img/Logo_web.png">
-            <h1 class="name">Clay Beauchamp</h1>
-            <p>Interactive Designer</p>
-        </div>
-
-        <!-- -------------------- About Page ------------------------- -->
-        <div id="section2" class="about section">
-            <h2>About Me</h2>
-            <div class='introduction'>
-                <p>Hi, my name is <b>Clay Beauchamp</b>, I am a graduate from Griffith University with a Bachelor of Multimedia. My major is in Interactive Entertainment and Games Programming. Throughout the past year whilst completing my degree I completed a game for an industry client, using Unity3D. Simultaneously, I have been working as an <b>Interactive Design Intern. </b>I design unique websites and print advertisements. I continue to improve my skills in these areas on a regular basis. Email me at any time if you would like to have a chat.</p>
+        <header class='landing wrapper blue'>
+            <div class="container landingFrame">
+                <h1>Clay <br/> Beauchamp</h1>
+                <h2>Interactive Designer</h2>
+                <p class="blurb">Hi, my name is Clay Beauchamp. I am a graduate from Griffith University with a Bachelor of Multimedia (Major in Interactive Entertainment and Games Programming). Currently I am working as an Interactive Designer creating websites, banners and print ads whilst also working on some personal projects. Feel free to contact me via <a class="mail" href="mailto:clay_jb@live.com.au">email</a> if you'd like to have a chat!</p>
             </div>
-            <div class="knowledge">
+        </header>
+        
+        <div class="container skillSet">
+            <h4 class="skillSetTitle">Skills</h4>
+            <div class="flexWrap">
                 <div class="skillBox">
-                    <i class="material-icons">&#xE31E;</i>
-                    <h3>Web Design</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Javascript</li>
-                        <li>JQuery</li>
-                        <li>API's</li>
-                        <li>Photoshop</li>
-                    </ul>
+                    <i class="material-icons ico">web</i>
+                    <h3>Responsive Web</h3>
+                    <p>I create responsive user interfaces with HTML5, CSS3 and Javascript. I have knowledge with backend technologies also.</p>
                 </div>
                 <div class="skillBox">
-                    <i class="material-icons">&#xE021;</i>
-                    <h3>Game Development / Programming</h3>
-                    <ul>
-                        <li>Unity3d</li>
-                        <li>c#</li>
-                        <li>3ds max</li>
-                        <li>3d Coat</li>
-                        <li>Python</li>
-                    </ul>
+                    <i class="material-icons ico">games</i>
+                    <h3>Game Development</h3>
+                    <p>Im an aspiring games developer. Familiar with Unity3D, C# and 3D modeling/animation software.</p>
                 </div>
                 <div class="skillBox">
-                    <i class="material-icons">&#xE86D;</i>
-                    <h3>Print Design</h3>
-                    <ul>
-                        <li>PhotoShop</li>
-                        <li>Illustrator</li>
-                        <li>Indesign</li>
-                    </ul>
+                    <i class="material-icons ico">mode_edit</i>
+                    <h3>Graphic Design</h3>
+                    <p>I'm experienced with Photoshop, Illustrator and Indesign. Creating website designs and print advertisement</p>
                 </div>
-            </div>
-        </div>
-            
-        <div id="section3" class="portfolio">
-            <h2>Portfolio</h2>
-            <div class="portfolioWrapper">
-                <div class="portfolioBox item1"><a class="itemBtn" href="item1.html">2D Side-Scrolling Game</a></div>
-                <div class="portfolioBox item2"><a class="itemBtn" href="item2.html">Facebook API Application</a></div>
-                <div class="portfolioBox item3"><a class="itemBtn" href="item3.html">Calculator Application</a></div>
-                <div class="portfolioBox item4"><a class="itemBtn" href="item4.html">Global Warming ELearning Object</a></div>
-                <div class="portfolioBox item5"><a class="itemBtn" href="item5.html">Contact Application</a></div>
-                <div class="portfolioBox item6"><a class="itemBtn" href="item6.html">Design</a></div>
-                <div class="portfolioBox item7"><a class="itemBtn">3D FPS Game Coming Soon</a></div>
             </div>
         </div>
         
-        <footer id="contact">
-            <div class="footerRow">
-                <ul class="col">
-                    <h4>My Work</h4>
-                    <ul class="column">
-                        <li><a href="item1.html">7 Minutes</a></li>
-                        <li><a href="item2.html">DMS Travel</a></li>
-                        <li><a href="item3.html">ELearning Object</a></li>
-                        <li><a href="item4.html">Calculator</a></li>
-                    </ul>
-                     <ul class="column">
-                        <li><a href="item5.html">Contact Application</a></li>
-                        <li><a href="item6.html">Design</a></li>
-                        <li><a>3D FPS</a></li>
-                    </ul>
-                </ul>
-                
-                <ul class="col">
-                    <h4>Contact Me</h4>
-                    <ul class="column">
-                        <a href="mailto:clay_jb@live.com.au"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                        <a href="https://www.facebook.com/clay.beauchamp.98" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/clay-beauchamp-2b40a7149/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                    </ul>
-                </ul>
-                
-                <ul class="col">
-                    <img src="img/Logo_web.png">
-                </ul>
+        <div class="container flexWrap">
+            <div class="details">
+                <div class="skillBar">
+                    <h6>HTML5</h6>
+                    <div class="slider">
+                        <span class="fill blue"></span>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <h6>CSS3</h6>
+                    <div class="slider">
+                        <span class="fill blue"></span>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <h6>Javascript</h6>
+                    <div class="slider">
+                        <span class="fill blue"></span>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <h6>Photoshop</h6>
+                    <div class="slider">
+                        <span class="fill blue"></span>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <h6>Illustrator</h6>
+                    <div class="slider">
+                        <span class="fill blue"></span>
+                    </div>
+                </div>
             </div>
-        </footer>
-                    
+            <div class="details">
+                <div class="skillBar ">
+                    <h6>InDesign</h6>
+                    <div class="slider">
+                        <span class="fill blue"></span>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <h6>Unity</h6>
+                    <div class="slider">
+                        <span class="fill blue"></span>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <h6>C#</h6>
+                    <div class="slider">
+                        <span class="fill blue"></span>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <h6>Python</h6>
+                    <div class="slider">
+                        <span class="fill blue"></span>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <h6>Java</h6>
+                    <div class="slider">
+                        <span class="fill blue"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="websites">
+            <div class="container websites">
+                <h4 class="portfolioTitle">Portfolio</h4>
+                <div class="design">
+                    <div class="mockSite"><a class="mock1"><img src="img/websites/1.png" alt="Website Design"></a></div>
+                    <div class="mockSite"><a class="mock2"><img src="img/websites/4.png" alt="Website Design"></a></div>
+                    <div class="mockSite"><a class="mock3"><img src="img/websites/3.png" alt="Website Design"></a></div>
+                    <div class="mockSite"><a class="mock4"><img src="img/websites/2.png" alt="Website Design"></a></div>
+                </div>
+            </div> 
+        </div>
+        
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <a class="close">&times;</a>
+                <div class="content">
+                    <img src="img/mock4.jpg" alt="Website Design Mock">
+                </div>
+            </div>
+        </div>
+        
+        <div id="popup2" class="overlay">
+            <div class="popup">
+                <a class="close">&times;</a>
+                <div class="content">
+                    <img src="img/mock2.jpg" alt="Website Design Mock">
+                </div>
+            </div>
+        </div>
+        
+        <div id="popup3" class="overlay">
+            <div class="popup">
+                <a class="close">&times;</a>
+                <div class="content">
+                    <img src="img/mock3.jpg" alt="Website Design Mock">
+                </div>
+            </div>
+        </div>
+        
+        <div id="popup4" class="overlay">
+            <div class="popup">
+                <a class="close">&times;</a>
+                <div class="content">
+                    <img src="img/mock.jpg" alt="Website Design Mock">
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-container">
+            <div class="menu">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+                <label for="slide-dot-4"></label>
+                <label for="slide-dot-5"></label>
+            </div>
+
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+            <div class="slide slide-1">
+                <div class="container slideContent">
+                    <h4 >7 Minutes</h4>
+                    <h6 class="role">Project Manager | Lead Programmer</h6>
+                    <p class="aboutWork">7 Minutes is a demo game made during Industry Project at university. Done in a team of 4, I was the Lead Programmer and Project Manager. The game itself was developed using Unity3D and all assets and sound were made by members of the team. Being the main programmer I created a majority of the player character, including the animations and mechanics. I also developed the entire orb character, which acts as a light mechanic for the platformer. Being the project manager I had to organise the team and create weekly sprints among other duties such as time management.</p>
+                        <img src="img/portfolio-img/7min-title.jpg" alt="7 Minutes Title Screen">    
+                </div>
+            </div>
+
+            <input id="slide-dot-2" type="radio" name="slides">
+            <div class="slide slide-2">
+                <div class="container slideContent">
+                    <h4>DMS Travel</h4>
+                    <h6 class="role">Developer</h6>
+                    <p class="aboutWork">
+                        DMS travel is a dynamic application which uses the Facebook API to sign in and retrieve data from the DMS Travel Facebook page. It displays albums from the DMS page that are related to Australia and allows you to access the albums through lightbox. The user is authenticated via a facebook login prompt allowing access to the albums within the application.
+                    </p>
+                    <div class="devIcons">
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-jquery-plain-wordmark colored"></i>
+                        <i class="devicon-facebook-plain colored"></i>
+                    </div>
+                    <img src="img/portfolio-img/dms.jpg" alt="DMS Travel Landing Page">
+                </div>
+            </div>
+
+            <input id="slide-dot-3" type="radio" name="slides">
+            <div class="slide slide-3">
+                <div class="container slideContent">
+                    <h4>Learning Object</h4>
+                    <h6 class="role">Developer</h6>
+                    <p class="aboutWork">
+                        This ELearning application was created for grade 5 and 6 students. It is designed to create an awareness of global warming. Providing content and quizzes relevant to the age group. The application also has a reward system for completeing the quizzes to a specific standard, encouraging users to achieve a better grade, ultimatley stimulating learning. The design of the website is heavily interactive, including many hover effects and engaging the audience to traverse through the page through imagery such as FontAwesome icons.
+                    </p>
+                    <div class="devIcons">
+                        <i class="devicon-photoshop-line colored"></i>
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-jquery-plain-wordmark colored"></i>
+                    </div>
+                    <img src="img/portfolio-img/elearn.jpg" alt="Elearining Website Home Page">
+                </div>
+            </div>
+            
+            <input id="slide-dot-4" type="radio" name="slides">
+            <div class="slide slide-4">
+                <div class="container slideContent">
+                    <h4>Flickr Search</h4>
+                    <h6 class="role">Developer</h6>
+                    <p class="aboutWork">
+                        A search application that dynamically retrieves images from flickr and displays them to user. Images are retrieved with the flickr API and displayed on cards for the user. Images displayed are related to the keywords that the user enters in the search bar. Currently the front end is being redesigned to be more aesthetically pleasing for the user.
+                    </p>
+                    <div class="devIcons">
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-jquery-plain-wordmark colored"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <input id="slide-dot-5" type="radio" name="slides">
+            <div class="slide slide-5">
+                <div class="container slideContent">
+                    <h4>First Person Shooter</h4>
+                    <h6 class="role">Lead Programmer</h6>
+                    <p class="aboutWork">
+                        A game made using Unity3D for a university assignment. I was the lead programmer, developing the player character, scoring system, UI and AI. The AI are programmed using a navmesh and pathfinding algorithim with varying attack range, speed and durability, depending on the AI type. The player is created with the Unity character controller and has a set health, speed, damage and ammo count. The player stats and ammo can be enhanced with buffs located on the map for a short period of time. The game has 3 levels of increasing difficulty with new AI spawns each round.
+                    </p>
+                    <img src="img/portfolio-img/sand.jpg" alt="3D Game Image">
+                </div>
+            </div>
+        </div>
+        
+        <div class="social blue landing">
+            <h4>Get In Touch</h4>
+            <div class="col socialLinks">
+                <a class="facebook" href="https://www.facebook.com/clay.beauchamp.98" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a class="mail" href="mailto:clay_jb@live.com.au"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a class="linkdin" href="https://www.linkedin.com/in/clay-beauchamp-2b40a7149/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright"> 
+                <p>Site Created By <strong>Clay Beauchamp</strong></p>
+            </div>
+        </footer>        
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="script.js"></script>
-        
     </body>
 </html>
