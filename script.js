@@ -67,21 +67,12 @@ $(document).ready(function () {
                     opacity: 1
                 }, 0);
             });
-            $('.fill:eq(0), .fill:eq(1)').each(function () {
-                $(this).addClass("fill-10");
-            }); 
-            $('.fill:eq(3)').each(function () {
-                $(this).addClass("fill-07");
-            });
-            $('.fill:eq(4), .fill:eq(6), .fill:eq(7)').each(function () {
-                $(this).addClass("fill-06");
-            });
-            $('.fill:eq(5), .fill:eq(8)').each(function () {
-                $(this).addClass("fill-04");
-            });
-            $('.fill:eq(2), .fill:eq(9)').each(function () {
-                $(this).addClass("fill-03");
-            });
+            $('.fill:eq(0), .fill:eq(1)').addClass("fill-10");
+            $('.fill:eq(2)').addClass('fill-9')
+            $('.fill:eq(3)').addClass("fill-07");
+            $('.fill:eq(4), .fill:eq(6), .fill:eq(7)').addClass("fill-06");
+            $('.fill:eq(5), .fill:eq(8)').addClass("fill-04");
+            $('.fill:eq(9)').addClass("fill-03");
         };
         
         var designAnimation = function () {
