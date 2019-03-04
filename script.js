@@ -68,18 +68,18 @@ $(document).ready(function () {
                 }, 0);
             });
             $('.fill:eq(0), .fill:eq(1)').each(function () {
-                $(this).addClass("fill-09");
-            });
+                $(this).addClass("fill-10");
+            }); 
             $('.fill:eq(3)').each(function () {
                 $(this).addClass("fill-07");
             });
-            $('.fill:eq(2), .fill:eq(4), .fill:eq(6), .fill:eq(7)').each(function () {
+            $('.fill:eq(4), .fill:eq(6), .fill:eq(7)').each(function () {
                 $(this).addClass("fill-06");
             });
             $('.fill:eq(5), .fill:eq(8)').each(function () {
                 $(this).addClass("fill-04");
             });
-            $('.fill:eq(9)').each(function () {
+            $('.fill:eq(2), .fill:eq(9)').each(function () {
                 $(this).addClass("fill-03");
             });
         };
