@@ -5,28 +5,10 @@ $(document).ready(function () {
     
     // animations //
     var landingAnimation = function () {
-        $('.landing h1').each(function () {
-            $(this).delay(0).animate({
-                opacity: 1,
-                left: 0
-            }, 0);
-        });
-        $('.landing h2').each(function () {
-            $(this).delay(500).animate({
-                opacity: 1,
-                bottom: 0
-            }, 0);
-        });
-        $('.landing .blurb').each(function () {
-            $(this).delay(1000).animate({
-                opacity: 1
-            }, 0);
-        });
-        $('.landing a').each(function () {
-            $(this).delay(1000).animate({
-                opacity: 1
-            }, 0);
-        });
+        $('.landing h1').delay(0).animate({ opacity: 1, left: 0 }, 0);
+        $('.landing h2').delay(500).animate({ opacity: 1, bottom: 0}, 0);
+        $('.landing .blurb').delay(1000).animate({ opacity: 1 }, 0);
+        $('.landing a').delay(1000).animate({ opacity: 1 }, 0);
     };
     landingAnimation();
     
@@ -35,37 +17,15 @@ $(document).ready(function () {
         var windowScrollTop = $(this).scrollTop();
         
         var devAnimation = function () {
-            $('.skillSetTitle').each(function () {
-                $(this).delay(0).animate({
-                    opacity: 1
-                }, 500);
-            });
-            
-            $('.skillBox:eq(0)').each(function () {
-                $(this).delay(0).animate({
-                    opacity: 1,
-                    right: 0
-                }, 0);
-            });
-            $('.skillBox:eq(1)').each(function () {
-                $(this).delay(250).animate({
-                    opacity: 1,
-                    right: 0
-                }, 0);
-            });
-            $('.skillBox:eq(2)').each(function () {
-                $(this).delay(500).animate({
-                    opacity: 1,
-                    right: 0
-                }, 0);
-            });
+            $('.skillSetTitle').delay(0).animate({ opacity: 1 }, 500);
+            $('.skillBox:eq(0)').delay(0).animate({ opacity: 1, right: 0 }, 0);
+            $('.skillBox:eq(1)').delay(250).animate({ opacity: 1, right: 0 }, 0);
+            $('.skillBox:eq(2)').delay(500).animate({ opacity: 1, right: 0 }, 0);
         };
         
         var barAnimation = function () {
             $('.fill').each(function () {
-                $(this).delay(0).animate({
-                    opacity: 1
-                }, 0);
+                $(this).delay(0).animate({ opacity: 1 }, 0);
             });
             $('.fill:eq(0), .fill:eq(1)').addClass("fill-10");
             $('.fill:eq(2)').addClass('fill-09')
@@ -76,36 +36,11 @@ $(document).ready(function () {
         };
         
         var designAnimation = function () {
-            $('.portfolioTitle').each(function () {
-                $(this).delay(0).animate({
-                    opacity: 1
-                }, 500);
-            });
-            
-            $('.mockSite:eq(0)').each(function () {
-                $(this).delay(0).animate({
-                    opacity: 1,
-                    right: 0
-                }, 0);
-            });
-            $('.mockSite:eq(1)').each(function () {
-                $(this).delay(600).animate({
-                    opacity: 1,
-                    right: 0
-                }, 0);
-            });
-            $('.mockSite:eq(2)').each(function () {
-                $(this).delay(1200).animate({
-                    opacity: 1,
-                    right: 0
-                }, 0);
-            });
-            $('.mockSite:eq(3)').each(function () {
-                $(this).delay(1800).animate({
-                    opacity: 1,
-                    right: 0
-                }, 0);
-            });
+            $('.portfolioTitle').delay(0).animate({ opacity: 1 }, 500);
+            $('.mockSite:eq(0)').delay(0).animate({ opacity: 1, right: 0 }, 0);
+            $('.mockSite:eq(1)').delay(600).animate({ opacity: 1, right: 0 }, 0);
+            $('.mockSite:eq(2)').delay(1200).animate({ opacity: 1, right: 0 }, 0);
+            $('.mockSite:eq(3)').delay(1800).animate({ opacity: 1, right: 0 }, 0);
         };
         
         var sliderAnimation = function () {
