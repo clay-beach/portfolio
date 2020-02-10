@@ -1,0 +1,66 @@
+$pad: 10px;
+
+.clear-side {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+// colours classes
+
+.bg {
+    &__green {
+        background: $green;
+    }
+
+    &__blue {
+        background: $blue;
+    }
+
+    &__lightblue {
+        background: $lightblue;
+    }
+
+    &__orange {
+        background: $orange;
+    }
+
+    &__yellow {
+        background: $yellow;
+    }
+
+    &__white {
+        background-color: $white !important;
+    }
+
+    &__offWhite {
+        background: $offWhite;
+    }
+}
+
+.color {
+    &__green {
+        color: $green;
+    }
+
+    &__blue {
+        color: $blue;
+    }
+
+    &__lightblue {
+        color: $lightblue;
+    }
+
+    &__orange {
+        color: $orange;
+    }
+
+    &__yellow {
+        color: $yellow;
+    }
+}
+
+.flex {
+    display: flex;
+}

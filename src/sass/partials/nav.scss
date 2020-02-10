@@ -1,0 +1,43 @@
+header {
+    box-sizing: border-box;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav {
+    @extend %flex;
+    justify-content: flex-end;
+    padding: $pad * 1.5;
+
+    &__right {
+        @extend %flex-justify;
+    }
+
+    &__item {
+        padding: 0 15px;
+        color: $orange;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+
+        &--active {
+            color: $blue;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        height: auto !important;
+    }
+}

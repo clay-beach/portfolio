@@ -1,0 +1,11 @@
+.btn {
+    @extend %transition;
+    color: $blue;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+        color: $lightblue;
+    }
+}

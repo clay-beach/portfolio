@@ -1,0 +1,19 @@
+.hero {
+    @extend %flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100% - 48px);
+    padding: 0 10%;
+
+    &__name {
+        color: lighten($black, 50%);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    &__title {
+        font-size: 48px;
+    }
+}

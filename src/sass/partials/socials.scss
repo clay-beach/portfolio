@@ -1,0 +1,20 @@
+.social {
+    @extend %flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    padding: 15px;
+
+    a {
+        font-size: 1.5em;
+    }
+
+    &__linkedin {
+        color: $orange;
+    }
+
+    &__github {
+        color: $orange;
+    }
+}

@@ -1,0 +1,23 @@
+.page-content {
+    background: $white;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 48px 10%;
+
+    &__no-pad {
+        padding: 0;
+    }
+
+    &__grey {
+        background-color: $offWhite;
+    }
+}
+
+h2 {
+    color: $lightblue;
+    padding: 15px 0;
+}
+
+.hide {
+    display: none;
+}

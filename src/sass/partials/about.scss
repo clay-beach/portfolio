@@ -1,0 +1,29 @@
+.about {
+    height: 100%;
+
+    &-description {
+        width: 50%;
+
+        @media(max-width: 950px) {
+            width: 100%;
+        }
+    }
+
+    &-img {
+        width: 50%;
+        height: 100%;
+        text-align: center;
+
+        @media(max-width: 950px) {
+            display: none;
+        }
+
+        img {
+            height: 260px;
+        }
+    }
+
+    .page-content {
+        min-height: 50%;
+    }
+}
