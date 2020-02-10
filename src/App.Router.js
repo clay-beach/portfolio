@@ -21,10 +21,10 @@ const RouterContent = () => {
         transitions.map(({ item, props, key }) => (
             <animated.div style={{ ...props, position: "absolute", height: "calc(100% - 48.4px)", width: "100%" }} key={key}>
                 <Switch location={item}>
-                    <Route path="/" exact component={Index} />
-                    <Route path="/about/" component={About} />
-                    <Route path="/work/" exact component={Work} />
-                    <Route path="/work/:id" component={WorkComponent} />
+                    <Route path="/Portfolio" exact component={Index} />
+                    <Route path="/Portfolio/about/" component={About} />
+                    <Route path="/Portfolio/work/" exact component={Work} />
+                    <Route path="/Portfolio/work/:id" component={WorkComponent} />
                     <Route component={ErrorPage} />
                 </Switch>
             </animated.div>
