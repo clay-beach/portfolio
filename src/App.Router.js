@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { BrowserRouter as Router, Switch, Route, __RouterContext } from "react-router-dom";
+import { HashRouter, Switch, Route, __RouterContext } from "react-router-dom";
 import { useTransition, animated } from 'react-spring';
 import Index from "./pages/App.Home";
 import About from "./pages/App.About";
@@ -21,10 +21,10 @@ const RouterContent = () => {
         transitions.map(({ item, props, key }) => (
             <animated.div style={{ ...props, position: "absolute", height: "calc(100% - 48.4px)", width: "100%" }} key={key}>
                 <Switch location={item}>
-                    <Route path="/Portfolio" exact component={Index} />
-                    <Route path="/Portfolio/about/" component={About} />
-                    <Route path="/Portfolio/work/" exact component={Work} />
-                    <Route path="/Portfolio/work/:id" component={WorkComponent} />
+                    <Route path="/" exact component={Index} />
+                    <Route path="/about/" component={About} />
+                    <Route path="/work/" exact component={Work} />
+                    <Route path="/work/:id" component={WorkComponent} />
                     <Route component={ErrorPage} />
                 </Switch>
             </animated.div>
@@ -35,12 +35,12 @@ const RouterContent = () => {
 class AppRouter extends React.Component {
     render() {
         return (
-            <Router>
+            <HashRouter basename='/'>
                 <Header></Header>
                 <RouterContent></RouterContent>
                 <SocialLinks></SocialLinks>
                 <ScrollRestoration />
-            </Router>
+            </HashRouter>
         )
     }
 }
